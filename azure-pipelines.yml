@@ -1,8 +1,9 @@
 trigger:
 - main
 
-pool: 
-  vmImage: ubuntu-latestpool
+pool:
+  name: Default
+  demands: SpecialSoftware # exists check for SpecialSoftware
   
 steps:
 - script: "Hello world!"
